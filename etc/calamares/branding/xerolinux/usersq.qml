@@ -39,7 +39,7 @@ Kirigami.ScrollablePage {
         color: headerTextColor
         font.weight: Font.Medium
         font.pointSize: 12
-        text: qsTr("!!! User Creation Time !!! <br />Pick your user name and credentials to login and perform admin tasks")
+        text: qsTr("Pick your user name and credentials to login and perform admin tasks")
     }
 
     ColumnLayout {
@@ -52,6 +52,7 @@ Kirigami.ScrollablePage {
 
             Label {
                 width: parent.width
+                color: headerTextColor
                 text: qsTr("What is your name?")
             }
 
@@ -76,6 +77,7 @@ Kirigami.ScrollablePage {
 
             Label {
                 width: parent.width
+                color: headerTextColor
                 text: qsTr("What name do you want to use to log in?")
             }
 
@@ -115,7 +117,7 @@ Kirigami.ScrollablePage {
                 text: qsTr("If more than one person will use this computer, you can create multiple accounts after installation.")
                 font.weight: Font.Thin
                 font.pointSize: 8
-                color: commentsColor
+                color: headerTextColor
             }
         }
 
@@ -143,6 +145,7 @@ Kirigami.ScrollablePage {
 
             Label {
                 width: parent.width
+                color: headerTextColor
                 text: qsTr("What is the name of this computer?")
             }
 
@@ -179,7 +182,7 @@ Kirigami.ScrollablePage {
                 text: qsTr("This name will be used if you make the computer visible to others on a network.")
                 font.weight: Font.Thin
                 font.pointSize: 8
-                color: commentsColor
+                color: headerTextColor
             }
         }
 
@@ -207,6 +210,7 @@ Kirigami.ScrollablePage {
 
             Label {
                 width: parent.width
+                color: headerTextColor
                 text: qsTr("Choose a password to keep your account safe.")
             }
 
@@ -265,7 +269,7 @@ Kirigami.ScrollablePage {
                 font.weight: Font.Thin
                 font.pointSize: 8
                 wrapMode: Text.WordWrap
-                color: commentsColor
+                color: headerTextColor
             }
         }
 
@@ -294,8 +298,10 @@ Kirigami.ScrollablePage {
             id: root
             visible: config.writeRootPassword
             text: qsTr("Reuse user password as root password")
+            palette.windowText: "red"
             checked: config.reuseUserPasswordForRoot
             onCheckedChanged: config.setReuseUserPasswordForRoot(checked)
+
         }
 
         Label {
@@ -304,7 +310,7 @@ Kirigami.ScrollablePage {
             text: qsTr("Use the same password for the administrator account.")
             font.weight: Font.Thin
             font.pointSize: 8
-            color: commentsColor
+            color: headerTextColor
         }
 
         Column {
@@ -371,7 +377,7 @@ Kirigami.ScrollablePage {
                 text: qsTr("Enter the same password twice, so that it can be checked for typing errors.")
                 font.weight: Font.Thin
                 font.pointSize: 8
-                color: commentsColor
+                color: headerTextColor
             }
         }
 
@@ -397,15 +403,16 @@ Kirigami.ScrollablePage {
         }
 
         CheckBox {
-            Layout.alignment: Qt.AlignCenter
+            Layout.alignment: Qt.AlignLeft
             text: qsTr("Log in automatically without asking for the password")
+            palette.windowText: "red"
             checked: config.doAutoLogin
             onCheckedChanged: config.setAutoLogin(checked)
         }
 
         CheckBox {
             visible: config.permitWeakPasswords
-            Layout.alignment: Qt.AlignCenter
+            Layout.alignment: Qt.AlignLeft
             text: qsTr("Validate passwords quality")
             checked: config.requireStrongPasswords
             onCheckedChanged: config.setRequireStrongPasswords(checked),
@@ -415,11 +422,11 @@ Kirigami.ScrollablePage {
         Label {
             visible: config.permitWeakPasswords
             width: parent.width
-            Layout.alignment: Qt.AlignCenter
+            Layout.alignment: Qt.AlignLeft
             text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password.")
             font.weight: Font.Thin
             font.pointSize: 8
-            color: commentsColor
+            color: headerTextColor
         }
     }
 }

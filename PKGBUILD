@@ -1,5 +1,5 @@
 # Maintainer: DarkXero <info@techxero.com>
-pkgname=calamares-g-cfg
+pkgname=calamares-cfg
 _destname1="/etc"
 pkgver=3.4.0
 pkgrel=2

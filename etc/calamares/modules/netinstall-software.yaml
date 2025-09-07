@@ -1,0 +1,30 @@
+- name: "Browser"
+  description: "Web Browser"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - floorp
+    - firefox
+    - brave-bin
+    - librewolf
+- name: "Git"
+  description: "Git Applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - gittyup
+    - github-desktop
+- name: "Password Manager"
+  description: "Password Managers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - lastpass
+    - bitwarden
+    - keepassxc-git

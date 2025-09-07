@@ -14,7 +14,7 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
+  expanded: false
   packages:
     - gittyup
     - github-desktop
@@ -23,7 +23,7 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
+  expanded: false
   packages:
     - lastpass
     - bitwarden

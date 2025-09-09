@@ -9,7 +9,7 @@
     - firefox
     - brave-bin
     - librewolf
-- name: "Git"
+- name: "Git Stuff"
   description: "Git Applications"
   critical: false
   hidden: false
@@ -17,6 +17,7 @@
   expanded: false
   packages:
     - gittyup
+    - lazygit
     - github-desktop
 - name: "Password Manager"
   description: "Password Managers"

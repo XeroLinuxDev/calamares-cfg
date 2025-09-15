@@ -38,3 +38,14 @@
     - lib32-opencl-nvidia
     - linux-firmware-nvidia
     - lib32-vulkan-icd-loader
+- name: "Printer & Scanner"
+  description: "Basic Printer & Scanner Support"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - hplip
+    - print-manager
+    - scanner-support
+    - printer-support

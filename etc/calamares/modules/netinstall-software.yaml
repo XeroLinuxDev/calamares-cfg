@@ -7,17 +7,50 @@
   packages:
     - floorp
     - firefox
+    - filezilla
     - brave-bin
     - librewolf
-- name: "Git Stuff"
-  description: "Git Applications"
+    - vivaldi-meta
+    - tor-browser-bin
+    - mullvad-browser-bin
+    - ungoogled-chromium-bin
+- name: "Social Apps"
+  description: "Social Media Apps"
   critical: false
   hidden: false
   selected: false
   expanded: false
   packages:
+    - zapzap
+    - tokodon
+    - discord
+    - element
+    - telegram
+    - ferdium-bin
+- name: "LibreOffice"
+  description: "Libre Office Fresh Version"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - hunspell
+    - hunspell-en_us
+    - libreoffice-fresh
+    - libreoffice-extension-texmaths
+    - libreoffice-extension-writer2latex
+- name: "Git & Dev"
+  description: "Git & Dev Applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - hugo
+    - meld
     - gittyup
     - lazygit
+    - vscodium-bin
     - github-desktop
 - name: "Password Manager"
   description: "Password Managers"
@@ -27,5 +60,56 @@
   expanded: false
   packages:
     - lastpass
+    - keepassxc
     - bitwarden
-    - keepassxc-git
+- name: "Android Development"
+  description: "Android Dev Tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - qtscrcpy
+    - adbmanager
+    - android-udev
+    - android-tools
+    - android-platform
+    - android-sdk-platform-tools
+- name: "Imaging Tools"
+  description: "Imaging Apps & Tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - gimp
+    - godot
+    - krita
+    - blender
+- name: "Audio Prod. & Music"
+  description: "Audio Production & Music Apps"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - mpv
+    - amarok
+    - spotify
+    - qpwgraph
+    - tenacity
+    - jamesdsp
+    - easyeffects
+- name: "Video Prod. & Editing"
+  description: "Video Production & Editing Apps"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - mystiq
+    - makemkv
+    - kdenlive
+    - avidemux-qt
+    - mkvtoolnix-gui
+    - losslesscut-bin

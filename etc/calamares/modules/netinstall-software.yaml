@@ -28,7 +28,7 @@
     - telegram
     - ferdium-bin
 - name: "LibreOffice"
-  description: "Libre Office Fresh Version"
+  description: "Libre Office Fresh"
   critical: false
   hidden: false
   selected: false
@@ -48,8 +48,6 @@
   packages:
     - hugo
     - meld
-    - gittyup
-    - lazygit
     - vscodium-bin
     - github-desktop
 - name: "Password Manager"
@@ -59,7 +57,6 @@
   selected: false
   expanded: false
   packages:
-    - lastpass
     - keepassxc
     - bitwarden
 - name: "Android Development"
@@ -96,7 +93,6 @@
     - mpv
     - amarok
     - spotify
-    - qpwgraph
     - tenacity
     - jamesdsp
     - easyeffects
@@ -113,3 +109,19 @@
     - avidemux-qt
     - mkvtoolnix-gui
     - losslesscut-bin
+- name: "Extra Fonts"
+  description: "More Fonts..."
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - noto-fonts
+    - ttf-dejavu
+    - asian-fonts
+    - ttf-caladea
+    - ttf-carlito
+    - ttf-liberation
+    - ttf-linux-libertine-g
+    - adobe-source-code-pro-fonts
+    - adobe-source-serif-pro-fonts

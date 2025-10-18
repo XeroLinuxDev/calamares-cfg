@@ -49,3 +49,14 @@
     - print-manager
     - scanner-support
     - printer-support
+- name: "Various Drivers"
+  description: "Mouse, RGB & More"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - openrgb
+    - xfprintd-gui
+    - openrazer-daemon
+    - openrazer-driver-dkms

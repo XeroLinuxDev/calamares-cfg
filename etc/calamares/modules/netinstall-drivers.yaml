@@ -50,13 +50,15 @@
     - scanner-support
     - printer-support
 - name: "Various Drivers"
-  description: "Mouse, RGB & More"
+  description: "Mouse, RGB, Webcam & More"
   critical: false
   hidden: false
   selected: false
   expanded: false
   packages:
+    - piper
     - openrgb
+    - cameractrls
     - xfprintd-gui
     - openrazer-daemon
     - openrazer-driver-dkms

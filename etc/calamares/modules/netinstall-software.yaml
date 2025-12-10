@@ -1,3 +1,12 @@
+# - name: "Essentials"
+#   description: "Essentials"
+#   critical: true
+#   hidden: true
+#   selected: true
+#   expanded: false
+#   packages:
+#     - xero-toolkit
+#     - xero-gpu-tools
 - name: "Browser"
   description: "Web Browser"
   critical: false
@@ -35,8 +44,8 @@
   expanded: false
   packages:
     - hunspell
-    - hunspell-en_us
     - libreoffice-fresh
+    - hunspell-@LANGUAGE@
     - libreoffice-extension-texmaths
     - libreoffice-extension-writer2latex
 - name: "Git & Dev"
@@ -66,6 +75,7 @@
   selected: false
   expanded: false
   packages:
+    - heimdall
     - qtscrcpy
     - adbmanager
     - android-udev

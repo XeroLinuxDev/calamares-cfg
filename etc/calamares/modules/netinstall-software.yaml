@@ -1,12 +1,3 @@
-# - name: "Essentials"
-#   description: "Essentials"
-#   critical: true
-#   hidden: true
-#   selected: true
-#   expanded: false
-#   packages:
-#     - xero-toolkit
-#     - xero-gpu-tools
 - name: "Browser"
   description: "Web Browser"
   critical: false
@@ -15,14 +6,25 @@
   expanded: false
   packages:
     - floorp
-    - firefox
     - filezilla
     - brave-bin
     - librewolf
     - vivaldi-meta
     - tor-browser-bin
     - mullvad-browser-bin
+    - firefox-i18n-@LANGUAGE@
     - ungoogled-chromium-bin
+- name: "VPN"
+  description: "Virtual Private Network"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - expressvpn
+    - mozillavpn
+    - mullvad-vpn
+    - proton-vpn-cli
 - name: "Social Apps"
   description: "Social Media Apps"
   critical: false

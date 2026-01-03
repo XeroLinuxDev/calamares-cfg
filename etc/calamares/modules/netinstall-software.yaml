@@ -6,13 +6,13 @@
   expanded: false
   packages:
     - floorp
+    - firefox
     - filezilla
     - brave-bin
     - librewolf
     - vivaldi-meta
     - tor-browser-bin
     - mullvad-browser-bin
-    - firefox-i18n-@LANGUAGE@
     - ungoogled-chromium-bin
 - name: "VPN"
   description: "Virtual Private Network"
